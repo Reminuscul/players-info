@@ -10,9 +10,13 @@
 - **À droite du corps :** l'objet en main (nom, enchantements, durabilité), la posture et l'action (sprint, vol en élytres, tire à l'arc…), la distance, les coordonnées et la vitesse.
 - **Sous les pieds :** les derniers événements (touché par…, coup critique, totem, changement d'objet…). Les répétitions se regroupent (`Hit by Okun ×7`).
 
-| En combat | En PvP | À l'arc |
-|---|---|---|
-| ![Touché, les cœurs baissent](docs/1794059574673_2026-11-07_14.51.17.png) | ![Sur Hypixel](docs/1794059647284_2026-11-07_12.11.51.png) | ![Arc bandé sur Hypixel](docs/1794059676452_2026-11-07_12.11.04.png) |
+## Screenshots
+
+<p>
+  <img src="docs/1794059574673_2026-11-07_14.51.17.png" width="32%">
+  <img src="docs/1794059647284_2026-11-07_12.11.51.png" width="32%">
+  <img src="docs/1794059676452_2026-11-07_12.11.04.png" width="32%">
+</p>
 
 Seul un joueur réellement en vue est affiché : pas à travers les murs, et pas les joueurs invisibles. Les spectateurs ne sont visibles que si tu l'es aussi. Le mod n'affiche que ce que le serveur envoie déjà à ton client.
 
@@ -35,4 +39,4 @@ Dans **Options > Mods > Players Info**, tu peux régler :
 
 ## Licence
 
-[MIT](LICENSE) © 2026 Rémi
+[MIT](LICENSE) © 2026 Reminuscul
