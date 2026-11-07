@@ -1,0 +1,21 @@
+[package]
+name = "players-info"
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+description = "What you can know of the player you look at, drawn around them, for Horizon"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+# The launcher points this at the Horizon source it builds the game from.
+horizon-client = { git = "https://github.com/horizon-rust/horizon", rev = "f319701e8c9ab657ff562250b3ba07b2d654e3bc" }
+# Health, flags and pose come in entity data packets, whose value type `mod_api` doesn't
+# re-export. The launcher stages this package at `native-api/players_info/` in the Horizon source
+# it builds, so this path is Horizon's own protocol crate, the one horizon-client uses.
+horizon-protocol = { path = "../../crates/horizon-protocol" }
+log = "0.4"
+serde = { version = "1", features = ["derive"] }
+toml = "1"
