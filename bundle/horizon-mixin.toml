@@ -1,0 +1,14 @@
+# Players Info: what you can know of the player you look at, around them, for Horizon.
+[mod]
+id = "players_info"
+version = "1.0.0"
+
+[compatibility]
+# Nightly 2026-11-05 (tag nightly-source/2026-11-05-f319701): the client services Players Info
+# reads and draws with (`client_entities`, `client_heads`, `client_profiles`,
+# `client_visual_clear`, `gui_paint`, world primitives) are on this commit but not yet stamped
+# into a numbered hook API, so it pins the commit.
+horizon_revision = "f319701e8c9ab657ff562250b3ba07b2d654e3bc"
+
+[api]
+path = "api"
