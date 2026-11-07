@@ -2,7 +2,7 @@
 
 **Pour Minecraft Horizon 26.3.** Vise un joueur et ses infos apparaissent **autour de lui**, à l'écran, avec la police, les sprites et les icônes d'objets du jeu. Elles le suivent quand il bouge et rapetissent quand il s'éloigne.
 
-![Players Info sur un joueur](docs/apercu.png)
+![Players Info sur un joueur](docs/1794059537014_2026-11-07_14.49.06.png)
 
 - **Au-dessus du pseudo :** la barre de cœurs, dessinée comme celle du jeu (absorption, clignotement aux dégâts, hardcore, gel).
 - **À côté du pseudo :** le mode de jeu, et le ping avec les barres et les ms.
@@ -10,9 +10,9 @@
 - **À droite du corps :** l'objet en main (nom, enchantements, durabilité), la posture et l'action (sprint, vol en élytres, tire à l'arc…), la distance, les coordonnées et la vitesse.
 - **Sous les pieds :** les derniers événements (touché par…, coup critique, totem, changement d'objet…). Les répétitions se regroupent (`Hit by Okun ×7`).
 
-| En combat | En PvP |
-|---|---|
-| ![Touché, les cœurs baissent](docs/combat.png) | ![Sur Hypixel](docs/pvp.png) |
+| En combat | En PvP | À l'arc |
+|---|---|---|
+| ![Touché, les cœurs baissent](docs/1794059574673_2026-11-07_14.51.17.png) | ![Sur Hypixel](docs/1794059647284_2026-11-07_12.11.51.png) | ![Arc bandé sur Hypixel](docs/1794059676452_2026-11-07_12.11.04.png) |
 
 Seul un joueur réellement en vue est affiché : pas à travers les murs, et pas les joueurs invisibles. Les spectateurs ne sont visibles que si tu l'es aussi. Le mod n'affiche que ce que le serveur envoie déjà à ton client.
 
