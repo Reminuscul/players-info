@@ -1,0 +1,30 @@
+# Publishing a release builds the mod from these sources and attaches the .hnmod to it.
+name: Release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  hnmod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Package
+        run: python3 tools/package.py dist
+      - name: Attach to the release
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" dist/*.hnmod --clobber
+      - uses: actions/upload-artifact@v4
+        with:
+          name: players_info
+          path: dist/*.hnmod
